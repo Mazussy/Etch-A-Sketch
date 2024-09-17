@@ -1,3 +1,4 @@
+//script js
 
 const container = document.getElementById('container');
 const resizeButton = document.getElementById('resizeButton');
