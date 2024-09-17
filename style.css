@@ -1,10 +1,30 @@
+/* style.css */
+
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #7adad269;
+    font-family: 'Arial', sans-serif;
+}
+
+#resizeButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+#resizeButton:hover {
+    background-color: #0056b3;
 }
 
 #container {
@@ -12,13 +32,19 @@ body {
     flex-wrap: wrap;
     width: 500px;
     height: 500px;
-    border: 2px solid black;
+    border: 2px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .grid-item {
-    flex: 1 0 calc(500px / 16);
-    height: calc(500px / 16);
-    border: 1px solid #ddd;
-    background-color: white;
+    flex: 1 0 calc(500px / 16); /* Adjusts the width of each item */
+    height: calc(500px / 16);   /* Adjusts the height of each item */
+    background-color: #ffffff;
+    border: 1px solid #ccc;
     box-sizing: border-box;
+    transition: background-color 0.2s;
+}
+
+.grid-item:hover {
+    background-color: #007bff;
 }
